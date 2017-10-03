@@ -11,9 +11,13 @@ package buscaminas;
  * @author Pc
  */
 import java.util.Scanner;
+import java.util.AbstractCollection;
+import java.util.Arrays;
 public class buscaminas{
     Scanner scan=new Scanner(System.in);
-    
+    int hh;
+    int g;
+    String h;
     public static void main(String arg[]){
         //esta parte del codigo se encarga de crear los objetos necesarios para ejecutar el programa
 
@@ -23,6 +27,8 @@ public class buscaminas{
         int numMinas;
         int contador;
         int c=0;
+        int nn;
+        
         espacio[][] buscaminas;
         System.out.println("Buscaminas");
         System.out.print("Ingrese el numero de filas(5-50): ");
